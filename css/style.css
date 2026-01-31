@@ -217,7 +217,7 @@ picture img {
 
 .projectLinks {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   grid-gap: 20px;
   place-items: center;
 }
@@ -249,4 +249,16 @@ picture img {
 #projects i:hover {
   background: #1f2235;
   transition: ease-in-out 0.1s;
+}
+
+/* Projects: tabbed web/mobile views */
+.projectsHomeRight {
+  width: 100%;
+}
+
+.homeProjectLinks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: stretch;
 }
