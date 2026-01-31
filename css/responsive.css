@@ -28,6 +28,14 @@
         min-width: 350px;
         margin: 0 20px 0 0;
     }
+
+    .homeProjectLinks{
+        grid-template-columns: 1fr;
+    }
+
+    #contact .description{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (max-width: 912px){
@@ -78,8 +86,11 @@
     }
 
     #tools .description{
-        grid-gap: 0;
-        grid-row-gap: 30px;
+        grid-row-gap: 20px;
+    }
+
+    #tools .toolsGrid{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     i{
@@ -184,6 +195,10 @@
 
     #tools .description{
         grid-gap: 20px;
+    }
+
+    #tools .toolsGrid{
+        grid-template-columns: 1fr;
     }
 
     #contact .description{

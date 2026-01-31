@@ -1,0 +1,235 @@
+/* Project listing + case study pages (matches current theme) */
+
+.pageHero {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 100px 40px;
+}
+
+.pageHero small {
+  margin-top: 10px;
+}
+
+.pageSection {
+  padding: 60px 100px;
+}
+
+.pageSectionAlt {
+  padding: 60px 100px;
+  background-image: linear-gradient(90deg, #313552 0%, #313552 100%);
+}
+
+.splitSection {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.projectCard {
+  background-image: linear-gradient(100deg, #1f2235 0%, #21243b 100%);
+  border: 1px solid rgba(255, 197, 118, 0.25);
+  transition: ease-in-out 0.2s;
+}
+
+.projectCard:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 197, 118, 0.6);
+}
+
+.projectThumb img {
+  width: 100%;
+  display: block;
+}
+
+.projectCardBody {
+  padding: 22px 20px 24px;
+}
+
+.projectCardBody small {
+  font-size: 1rem;
+}
+
+.projectCardBody h3 {
+  font-size: 1.5rem;
+  margin-top: 12px;
+}
+
+.projectCardBody p {
+  margin-top: 12px;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+.btnRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  color: #ffc576;
+  text-align: center;
+  border: 1px solid #ffc576;
+  padding: 10px 0;
+  transition: ease-in-out 0.2s;
+}
+
+.btn:hover {
+  background: #313552;
+  transition: ease-in-out 0.1s;
+}
+
+/* Legend / quick-jump buttons: full width, wrap only when needed */
+.legendRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  width: 100%;
+  margin-top: 18px;
+}
+
+.legendRow .btn {
+  width: auto;
+  padding: 10px 16px;
+  white-space: nowrap;
+}
+
+/* Case study layout */
+.caseGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.casePanel {
+  background-image: linear-gradient(100deg, #1f2235 0%, #21243b 100%);
+  border: 1px solid rgba(255, 197, 118, 0.25);
+  padding: 22px 20px;
+}
+
+.casePanel h3 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.casePanel ul {
+  margin-left: 18px;
+  line-height: 1.8;
+}
+
+.casePanel li {
+  margin: 4px 0;
+}
+
+.caseMedia {
+  background-image: linear-gradient(100deg, #1f2235 0%, #21243b 100%);
+  border: 1px solid rgba(255, 197, 118, 0.25);
+}
+
+.caseMedia img {
+  width: 100%;
+  display: block;
+}
+
+.caseMediaCaption {
+  padding: 14px 16px 16px;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+/* App-style cover (for mobile case studies without screenshots) */
+.appCover {
+  padding: 26px 22px 22px;
+}
+
+.appCoverIcon {
+  width: 64px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 197, 118, 0.35);
+  background-image: linear-gradient(90deg, #313552 0%, #313552 100%);
+  margin-bottom: 16px;
+}
+
+.appCoverIcon i {
+  font-size: 28px;
+  color: #ffc576;
+  background: transparent;
+}
+
+.appCoverTitle {
+  font-size: 1.8rem;
+  font-family: "Playfair Display", serif;
+}
+
+.appCoverMeta {
+  margin-top: 8px;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.pill {
+  display: inline-block;
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 197, 118, 0.45);
+  color: #ffc576;
+  background-image: linear-gradient(100deg, #1f2235 0%, #21243b 100%);
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .pageHero,
+  .pageSection,
+  .pageSectionAlt {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .projectsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .pageHero {
+    padding: 50px 20px 25px;
+  }
+
+  .pageSection,
+  .pageSectionAlt {
+    padding: 35px 20px;
+  }
+
+  .projectsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .caseGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .splitSection {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
