@@ -89,6 +89,21 @@
   transition: ease-in-out 0.1s;
 }
 
+/* Legend / quick-jump buttons: full width, wrap only when needed */
+.legendRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  width: 100%;
+  margin-top: 18px;
+}
+
+.legendRow .btn {
+  width: auto;
+  padding: 10px 16px;
+  white-space: nowrap;
+}
+
 /* Case study layout */
 .caseGrid {
   display: grid;

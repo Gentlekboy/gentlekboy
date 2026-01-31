@@ -92,12 +92,47 @@ em {
   background-image: linear-gradient(100deg, #1f2235 0%, #21243b 100%);
 }
 
-#tools .description {
+#tools .toolsGrid {
   display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-template-rows: repeat(2, auto);
-  grid-gap: 50px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 20px;
+}
+
+.toolTile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(255, 197, 118, 0.45);
+  padding: 14px 16px;
+  background-image: linear-gradient(90deg, #313552 0%, #313552 100%);
+  transition: ease-in-out 0.2s;
+}
+
+.toolTile:hover {
+  background: #1f2235;
+  transition: ease-in-out 0.1s;
+}
+
+.toolName h3 {
+  font-size: 1.25rem;
+}
+
+.toolName small {
+  font-size: 0.95rem;
+}
+
+.toolIcon {
+  width: 52px;
+  height: 52px;
+  flex: 0 0 52px;
+  display: grid;
   place-items: center;
+}
+
+.toolIcon i {
+  font-size: 40px;
+  line-height: 1;
+  background: transparent;
 }
 
 i {
@@ -116,38 +151,8 @@ i {
 
 #contact .description {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-gap: 30px;
-}
-
-.contactLinkTile {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  color: #ffc576;
-  border: 1px solid #ffc576;
-  padding: 10px 20px;
-  transition: ease-in-out 0.2s;
-}
-
-.contactLinkLogo {
-  width: fit-content;
-  margin-left: 10px;
-}
-
-.contactLinkTile a {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.contactLinkName h3 {
-  font-size: 1.4rem;
-}
-
-.contactLinkName small {
-  font-size: 1rem;
 }
 
 #projects {
@@ -236,14 +241,21 @@ picture img {
   transition: ease-in-out 0.1s;
 }
 
+#about .description p {
+  line-height: 1.8;
+}
+
+#about .description p + p {
+  margin-top: 16px;
+}
+
 #projects a:hover {
   background: #313552;
   transition: ease-in-out 0.1s;
 }
 
-#contact .contactLinkTile:hover {
-  background: #313552;
-  transition: ease-in-out 0.1s;
+#contact .toolTile {
+  width: 100%;
 }
 
 #projects i:hover {
