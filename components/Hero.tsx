@@ -37,14 +37,14 @@ export default function Hero() {
             <Mail size={20} strokeWidth={1.75} />
           </a>
           <a
-            href="#"
+            href="https://github.com/Gentlekboy"
             aria-label="Kufre's GitHub"
             className="inline-flex h-10 w-10 items-center justify-center rounded-[var(--radius-md)] border border-border text-text-secondary transition-all duration-[var(--duration-fast)] hover:text-accent hover:[border-color:var(--accent-border)] hover:shadow-[var(--glow-accent)]"
           >
             <GithubIcon className="h-[18px] w-[18px]" />
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/gentlekboy/"
             aria-label="Kufre's LinkedIn"
             className="inline-flex h-10 w-10 items-center justify-center rounded-[var(--radius-md)] border border-border text-text-secondary transition-all duration-[var(--duration-fast)] hover:text-accent hover:[border-color:var(--accent-border)] hover:shadow-[var(--glow-accent)]"
           >

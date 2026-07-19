@@ -24,14 +24,14 @@ export default function Footer() {
               gentlekboy@gmail.com
             </a>
             <a
-              href="#"
+              href="https://github.com/Gentlekboy"
               className="inline-flex items-center gap-2 rounded-[var(--radius-md)] border border-border px-4 py-2.5 text-sm text-text-secondary transition-colors duration-[var(--duration-fast)] hover:text-accent hover:[border-color:var(--accent-border)]"
             >
               <GithubIcon className="h-4 w-4" />
               GitHub
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/gentlekboy/"
               className="inline-flex items-center gap-2 rounded-[var(--radius-md)] border border-border px-4 py-2.5 text-sm text-text-secondary transition-colors duration-[var(--duration-fast)] hover:text-accent hover:[border-color:var(--accent-border)]"
             >
               <LinkedinIcon className="h-4 w-4" />
