@@ -20,8 +20,25 @@ export default function Image() {
             "radial-gradient(700px circle at 20% 20%, rgba(232,161,68,0.16), transparent 60%)",
         }}
       >
+        <svg width="72" height="72" viewBox="0 0 100 100" fill="none">
+          <path
+            d="M32,12 L32,56"
+            stroke="#E8A144"
+            strokeWidth="14"
+            strokeLinecap="round"
+          />
+          <circle cx="32" cy="82" r="7" fill="#E8A144" />
+          <path
+            d="M76,12 L32,40 L76,84"
+            stroke="#E8A144"
+            strokeWidth="14"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
         <div
           style={{
+            marginTop: 32,
             fontSize: 96,
             fontWeight: 600,
             color: "#EDE8E0",
@@ -33,7 +50,7 @@ export default function Image() {
         </div>
         <div
           style={{
-            marginTop: 28,
+            marginTop: 20,
             fontSize: 32,
             color: "#A89F92",
             maxWidth: 900,
@@ -42,15 +59,6 @@ export default function Image() {
         >
           Software engineer crafting calm, dependable products.
         </div>
-        <div
-          style={{
-            marginTop: 48,
-            width: 64,
-            height: 4,
-            background: "#E8A144",
-            borderRadius: 2,
-          }}
-        />
       </div>
     ),
     { ...size }
