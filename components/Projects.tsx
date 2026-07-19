@@ -8,10 +8,10 @@ export default function Projects() {
       <div className="container-page flex flex-col gap-10">
         <Reveal>
           <div className="flex flex-col gap-3">
-            <span className="eyebrow">01 — Projects</span>
+            <span className="eyebrow">01 / Projects</span>
             <h2 className="text-h2 font-medium">Things I&rsquo;ve shipped</h2>
             <p className="prose-copy text-lead text-text-secondary">
-              A selection of past work — solo builds and team contributions
+              A selection of past work: solo builds and team contributions
               that made it to real users.
             </p>
           </div>

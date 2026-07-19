@@ -1,9 +1,18 @@
 import Reveal from "./Reveal";
 
 const skills = [
-  { area: "Backend", items: ["Node.js", "PostgreSQL", "Go", "REST/GraphQL"] },
-  { area: "Frontend", items: ["React", "Next.js", "TypeScript", "Tailwind"] },
-  { area: "Infra & Tools", items: ["Docker", "GitHub Actions", "AWS", "Vercel"] },
+  {
+    area: "Frontend",
+    items: ["React Native", "Expo", "Next.js", "TypeScript", "Tailwind CSS"],
+  },
+  {
+    area: "Backend & Data",
+    items: ["Firebase", "Supabase", "PostgreSQL", "Node.js"],
+  },
+  {
+    area: "Shipping & Tools",
+    items: ["EAS Build", "App Store & Play Store release", "Electron", "Google Maps SDK"],
+  },
 ];
 
 export default function About() {
@@ -11,7 +20,7 @@ export default function About() {
     <section id="about" className="section-gap">
       <div className="container-page flex flex-col gap-10">
         <Reveal>
-          <span className="eyebrow">03 — About</span>
+          <span className="eyebrow">03 / About</span>
         </Reveal>
 
         <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
@@ -20,20 +29,27 @@ export default function About() {
               <h2 className="text-h2 font-medium">A little about me</h2>
               <div className="prose-copy flex flex-col gap-4 text-base text-text-secondary">
                 <p>
-                  I&rsquo;m Kufre — a software engineer who likes building
-                  things that quietly work well. I care as much about how a
-                  product feels to use as how it&rsquo;s built underneath.
+                  I&rsquo;m Kufre, a software engineer who builds mobile and
+                  web products end to end. I&rsquo;ve shipped a relationship
+                  app built on explicit commitments instead of swipe
+                  mechanics, a symptom tracker for people living with lupus, a
+                  ride-hailing platform with rider and driver apps, a
+                  kakeibo-inspired budgeting app, and a full platform for a
+                  church community covering its website, staff tooling, and
+                  an offline quiz app.
                 </p>
                 <p>
-                  Most of my work sits at the intersection of solid backend
-                  systems and interfaces people actually enjoy using. I&rsquo;m
-                  drawn to small, focused teams and problems where craft
-                  matters.
+                  Some of that is frontend work alongside a designer and a
+                  backend engineer. Some of it is full-stack, solo, using
+                  Firebase or Supabase to move fast without a dedicated
+                  backend team.
                 </p>
                 <p>
-                  Right now I&rsquo;m interested in local-first tools,
-                  developer experience, and calmer ways for teams to
-                  collaborate.
+                  Right now I&rsquo;m most interested in products that ask
+                  people to be more intentional, whether that&rsquo;s how
+                  they date, budget, or track their health, and in the
+                  unglamorous work of actually getting an app through App
+                  Store review and into people&rsquo;s hands.
                 </p>
               </div>
             </div>

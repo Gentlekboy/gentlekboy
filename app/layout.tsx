@@ -27,14 +27,14 @@ const jetbrainsMono = JetBrains_Mono({
 
 const siteUrl = "https://kufre-udoh-portfolio.vercel.app";
 const oneLiner =
-  "Software engineer crafting calm, dependable products — from resilient backends to interfaces that feel effortless.";
+  "Software engineer crafting calm, dependable products, from resilient backends to interfaces that feel effortless.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Kufre Udoh — Software Engineer",
+  title: "Kufre Udoh, Software Engineer",
   description: oneLiner,
   openGraph: {
-    title: "Kufre Udoh — Software Engineer",
+    title: "Kufre Udoh, Software Engineer",
     description: oneLiner,
     url: siteUrl,
     siteName: "Kufre Udoh",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kufre Udoh — Software Engineer",
+    title: "Kufre Udoh, Software Engineer",
     description: oneLiner,
   },
 };

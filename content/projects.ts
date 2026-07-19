@@ -38,7 +38,7 @@ export const projects: Project[] = [
     status: "ongoing",
     stage: "Active development",
     blurb:
-      "A full platform for a church community — public website, a secretariat admin portal for membership and duty rosters, and an offline Bible quiz app.",
+      "A full platform for a church community: public website, a secretariat admin portal for membership and duty rosters, and an offline Bible quiz app.",
     tags: ["Next.js", "React", "Supabase", "Electron"],
   },
   {
@@ -68,7 +68,7 @@ export const projects: Project[] = [
     status: "ongoing",
     stage: "Pre-launch",
     blurb:
-      "A symptom tracker for lupus and chronic illness — daily logging, flare tracking, and an at-a-glance health dashboard. Design and backend by a small team.",
+      "A symptom tracker for lupus and chronic illness: daily logging, flare tracking, and an at-a-glance health dashboard. Design and backend by a small team.",
     tags: ["React Native"],
   },
 ];

@@ -1,25 +1,25 @@
 @import "tailwindcss";
 
 :root {
-  /* Color — base */
+  /* Color: base */
   --bg: #0f0e0c;
   --bg-elevated: #181613;
   --bg-subtle: #1f1c18;
   --border: #2a2620;
   --border-strong: #3a342b;
 
-  /* Color — text */
+  /* Color: text */
   --text-primary: #ede8e0;
   --text-secondary: #a89f92;
   --text-muted: #6e675c;
 
-  /* Color — accent (warm amber) */
+  /* Color: accent (warm amber) */
   --accent: #e8a144;
   --accent-hover: #f2b563;
   --accent-subtle: rgba(232, 161, 68, 0.1);
   --accent-border: rgba(232, 161, 68, 0.35);
 
-  /* Color — status */
+  /* Color: status */
   --status-wip: #7bc47f;
 
   /* Spacing & layout */

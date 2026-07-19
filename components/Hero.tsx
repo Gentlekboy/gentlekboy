@@ -1,5 +1,6 @@
 import { Mail, ArrowDown } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./icons";
+import Wordmark from "./Wordmark";
 
 export default function Hero() {
   return (
@@ -18,9 +19,11 @@ export default function Hero() {
 
       <div className="container-page flex flex-col gap-8">
         <div className="flex flex-col gap-5">
-          <h1 className="text-hero font-display font-medium">Kufre Udoh</h1>
+          <h1 className="text-hero font-display font-medium">
+            <Wordmark />
+          </h1>
           <p className="prose-copy text-lead text-text-secondary">
-            Software engineer crafting calm, dependable products — from
+            Software engineer crafting calm, dependable products, from
             resilient backends to interfaces that feel effortless.
           </p>
         </div>
