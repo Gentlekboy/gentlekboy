@@ -12,10 +12,29 @@ export interface Project {
     website?: string;
     appStore?: string;
     playStore?: string;
+    admin?: string;
+    merchantPortal?: string;
   };
 }
 
 export const projects: Project[] = [
+  {
+    slug: "etnowe",
+    title: "Etnowe",
+    role: "Contributor",
+    status: "shipped",
+    blurb:
+      "An African & Caribbean grocery and restaurant delivery platform: customer and merchant apps, a merchant support portal, and an admin dashboard. I worked across the whole stack fixing bugs and building order placement and refund features.",
+    tags: ["Next.js", "React Native"],
+    links: {
+      website: "https://etnowe.com/",
+      appStore: "https://apps.apple.com/us/app/etnowe-grocery-delivery/id1531814543",
+      playStore:
+        "https://play.google.com/store/apps/details?id=com.teyematics.etnowe",
+      admin: "https://admin.etnowe.com/",
+      merchantPortal: "https://www.support.etnowe.com/",
+    },
+  },
   {
     slug: "social-contract",
     title: "Social Contract",

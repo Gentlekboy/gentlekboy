@@ -1,4 +1,4 @@
-import { Globe, Smartphone } from "lucide-react";
+import { Globe, Smartphone, LayoutDashboard, Store } from "lucide-react";
 import type { Project } from "@/content/projects";
 
 export default function ProjectCard({ project }: { project: Project }) {
@@ -49,6 +49,22 @@ export default function ProjectCard({ project }: { project: Project }) {
                 className="inline-flex items-center gap-1 text-sm text-text-secondary transition-colors duration-[var(--duration-fast)] hover:text-accent"
               >
                 <Smartphone size={16} strokeWidth={1.75} /> Google Play
+              </a>
+            )}
+            {project.links.admin && (
+              <a
+                href={project.links.admin}
+                className="inline-flex items-center gap-1 text-sm text-text-secondary transition-colors duration-[var(--duration-fast)] hover:text-accent"
+              >
+                <LayoutDashboard size={16} strokeWidth={1.75} /> Admin
+              </a>
+            )}
+            {project.links.merchantPortal && (
+              <a
+                href={project.links.merchantPortal}
+                className="inline-flex items-center gap-1 text-sm text-text-secondary transition-colors duration-[var(--duration-fast)] hover:text-accent"
+              >
+                <Store size={16} strokeWidth={1.75} /> Merchant Portal
               </a>
             )}
           </div>
