@@ -8,57 +8,68 @@ export interface Project {
   stage?: string;
   blurb: string;
   tags: string[];
-  links?: { live?: string; repo?: string };
+  links?: {
+    website?: string;
+    appStore?: string;
+    playStore?: string;
+  };
 }
 
-// MOCK DATA — replace with real projects
 export const projects: Project[] = [
   {
-    slug: "ledgerline",
-    title: "Ledgerline",
-    role: "Built solo",
+    slug: "social-contract",
+    title: "Social Contract",
+    role: "Frontend (solo)",
     status: "shipped",
     blurb:
-      "A personal-finance tracker that turns messy bank exports into clear monthly insights. 4k+ downloads.",
-    tags: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind"],
-    links: { live: "#", repo: "#" },
+      "A relationship app built on explicit standards and commitments instead of swipe mechanics. Design and backend by a small team. Live on iOS and Android.",
+    tags: ["React Native", "Expo", "Firebase"],
+    links: {
+      website: "https://socialcontractapp.com/",
+      appStore: "https://apps.apple.com/ng/app/social-contract/id6759468493",
+      playStore:
+        "https://play.google.com/store/apps/details?id=com.socialcontract&pcampaignid=web_share",
+    },
   },
   {
-    slug: "relay-health",
-    title: "Relay Health",
-    role: "Core contributor",
-    status: "shipped",
+    slug: "coc-odogunyan",
+    title: "COC Odogunyan",
+    role: "Full-stack (solo)",
+    status: "ongoing",
+    stage: "Active development",
     blurb:
-      "Appointment and records platform for small clinics; cut patient check-in time by 60%.",
-    tags: ["React", "Node.js", "Supabase"],
-    links: { live: "#" },
+      "A full platform for a church community — public website, a secretariat admin portal for membership and duty rosters, and an offline Bible quiz app.",
+    tags: ["Next.js", "React", "Supabase", "Electron"],
   },
   {
-    slug: "forge-ci",
-    title: "Forge CI",
-    role: "Maintainer",
-    status: "shipped",
-    blurb: "Open-source CI pipeline templates adopted by 30+ repos.",
-    tags: ["GitHub Actions", "Docker", "Bash"],
-    links: { repo: "#" },
-  },
-  {
-    slug: "wavelength",
-    title: "Wavelength",
-    role: "Built solo",
+    slug: "fikowo",
+    title: "Fikowo",
+    role: "Full-stack (solo)",
     status: "ongoing",
-    stage: "Private beta",
-    blurb: "A calmer way for remote teams to share status without meetings.",
-    tags: ["Next.js", "Realtime"],
+    stage: "Early development",
+    blurb:
+      "A kakeibo-inspired budgeting app for young Nigerian professionals, built around salary cycles instead of calendar months.",
+    tags: ["Expo", "Next.js", "Supabase"],
   },
   {
-    slug: "atlas-notes",
-    title: "Atlas Notes",
-    role: "Built solo",
+    slug: "buxe",
+    title: "Buxe",
+    role: "Full-stack (solo)",
     status: "ongoing",
-    stage: "Design phase",
-    blurb: "Local-first notes with a map-based canvas. More soon.",
-    tags: ["Local-first", "CRDTs"],
+    stage: "Active development",
+    blurb:
+      "A ride-hailing app with rider and driver apps, live trip tracking, in-app payments, and a trusted-contacts safety feature.",
+    tags: ["Expo", "Firebase", "Google Maps"],
+  },
+  {
+    slug: "saroni",
+    title: "Saroni",
+    role: "Frontend (solo)",
+    status: "ongoing",
+    stage: "Pre-launch",
+    blurb:
+      "A symptom tracker for lupus and chronic illness — daily logging, flare tracking, and an at-a-glance health dashboard. Design and backend by a small team.",
+    tags: ["React Native"],
   },
 ];
 

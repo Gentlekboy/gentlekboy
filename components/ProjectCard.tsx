@@ -1,6 +1,5 @@
-import { ArrowUpRight } from "lucide-react";
+import { Globe, Smartphone } from "lucide-react";
 import type { Project } from "@/content/projects";
-import { GithubIcon } from "./icons";
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
@@ -27,21 +26,29 @@ export default function ProjectCard({ project }: { project: Project }) {
         </div>
 
         {project.links && (
-          <div className="flex items-center gap-4 pt-1">
-            {project.links.live && (
+          <div className="flex flex-wrap items-center gap-4 pt-1">
+            {project.links.website && (
               <a
-                href={project.links.live}
+                href={project.links.website}
                 className="inline-flex items-center gap-1 text-sm text-text-secondary transition-colors duration-[var(--duration-fast)] hover:text-accent"
               >
-                Live <ArrowUpRight size={16} strokeWidth={1.75} />
+                <Globe size={16} strokeWidth={1.75} /> Website
               </a>
             )}
-            {project.links.repo && (
+            {project.links.appStore && (
               <a
-                href={project.links.repo}
+                href={project.links.appStore}
                 className="inline-flex items-center gap-1 text-sm text-text-secondary transition-colors duration-[var(--duration-fast)] hover:text-accent"
               >
-                <GithubIcon className="h-4 w-4" /> Repo
+                <Smartphone size={16} strokeWidth={1.75} /> App Store
+              </a>
+            )}
+            {project.links.playStore && (
+              <a
+                href={project.links.playStore}
+                className="inline-flex items-center gap-1 text-sm text-text-secondary transition-colors duration-[var(--duration-fast)] hover:text-accent"
+              >
+                <Smartphone size={16} strokeWidth={1.75} /> Google Play
               </a>
             )}
           </div>
