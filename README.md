@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  <img src="brand/png/fused-k-512.png" width="72" alt="Kufre Udoh logo" />
 
-## Getting Started
+  # Kufre Udoh
 
-First, run the development server:
+  Software engineer crafting calm, dependable products, from resilient
+  backends to interfaces that feel effortless.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+  [Portfolio](https://gentlekboy.vercel.app/) · [Email](mailto:gentlekboy@gmail.com) · [LinkedIn](https://www.linkedin.com/in/gentlekboy/)
+</div>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+I build mobile and web products end to end. Some of that is frontend
+work alongside a designer and a backend engineer, some of it is
+full-stack, solo, using Firebase or Supabase to move fast without a
+dedicated backend team.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Things I've shipped
 
-## Learn More
+- **[Etnowe](https://etnowe.com/)**, an African & Caribbean grocery and
+  restaurant delivery platform. Customer and merchant apps, a merchant
+  support portal, and an admin dashboard. I worked across the whole
+  stack fixing bugs and building order placement and refund features.
+- **[Social Contract](https://socialcontractapp.com/)**, a relationship
+  app built on explicit standards and commitments instead of swipe
+  mechanics. Frontend, solo build; design and backend by a small team.
+  Live on iOS and Android.
 
-To learn more about Next.js, take a look at the following resources:
+## What I'm building now
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **COC Odogunyan**, a full platform for a church community: public
+  website, a secretariat admin portal, and an offline Bible quiz app.
+- **Fikowo**, a kakeibo-inspired budgeting app for young Nigerian
+  professionals, built around salary cycles instead of calendar months.
+- **Buxe**, a ride-hailing app with rider and driver apps, live trip
+  tracking, in-app payments, and a trusted-contacts safety feature.
+- **Saroni**, a symptom tracker for lupus and chronic illness.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+More detail, live links, and app store links for all of the above are
+on the [portfolio site](https://gentlekboy.vercel.app/).
 
-## Deploy on Vercel
+## Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+React Native, Expo, Next.js, TypeScript, Tailwind CSS, Firebase,
+Supabase, PostgreSQL, Node.js
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Right now
+
+Most interested in products that ask people to be more intentional,
+whether that's how they date, budget, or track their health, and in
+the unglamorous work of actually getting an app through App Store
+review and into people's hands. Open to new opportunities.

@@ -25,7 +25,7 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-const siteUrl = "https://kufre-udoh-portfolio.vercel.app";
+const siteUrl = "https://gentlekboy.vercel.app";
 const oneLiner =
   "Software engineer crafting calm, dependable products, from resilient backends to interfaces that feel effortless.";
 
