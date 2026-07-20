@@ -16,6 +16,10 @@ export default function Hero() {
             "radial-gradient(600px circle at 30% 30%, rgba(232,161,68,0.15), transparent 60%)",
         }}
       />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-10 hero-rings"
+      />
 
       <div className="container-page flex flex-col gap-8">
         <div className="flex flex-col gap-5">

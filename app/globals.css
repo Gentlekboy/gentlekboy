@@ -160,6 +160,22 @@
   .animate-wip-pulse {
     animation: wip-pulse 2.4s ease-in-out infinite;
   }
+
+  .hero-rings {
+    background-image:
+      radial-gradient(circle at 108% 45%, transparent 68px, rgba(232, 161, 68, 0.18) 68px, rgba(232, 161, 68, 0.18) 69.5px, transparent 69.5px),
+      radial-gradient(circle at 108% 45%, transparent 128px, rgba(232, 161, 68, 0.12) 128px, rgba(232, 161, 68, 0.12) 129.5px, transparent 129.5px),
+      radial-gradient(circle at 108% 45%, transparent 188px, rgba(232, 161, 68, 0.07) 188px, rgba(232, 161, 68, 0.07) 189.5px, transparent 189.5px),
+      radial-gradient(circle at 92% 12%, transparent 28px, rgba(232, 161, 68, 0.2) 28px, rgba(232, 161, 68, 0.2) 29.5px, transparent 29.5px),
+      radial-gradient(circle at 92% 12%, transparent 52px, rgba(232, 161, 68, 0.12) 52px, rgba(232, 161, 68, 0.12) 53.5px, transparent 53.5px);
+  }
+
+  .footer-rings {
+    background-image:
+      radial-gradient(circle at 96% 108%, transparent 30px, rgba(232, 161, 68, 0.16) 30px, rgba(232, 161, 68, 0.16) 31.5px, transparent 31.5px),
+      radial-gradient(circle at 96% 108%, transparent 58px, rgba(232, 161, 68, 0.1) 58px, rgba(232, 161, 68, 0.1) 59.5px, transparent 59.5px),
+      radial-gradient(circle at 96% 108%, transparent 86px, rgba(232, 161, 68, 0.06) 86px, rgba(232, 161, 68, 0.06) 87.5px, transparent 87.5px);
+  }
 }
 
 @keyframes hero-drift {
