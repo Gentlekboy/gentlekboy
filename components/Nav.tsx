@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Wordmark from "./Wordmark";
+import LogoMark from "./LogoMark";
 
 const links = [
   { href: "#projects", label: "Projects" },
@@ -52,9 +52,10 @@ export default function Nav() {
       <nav className="container-page w-full flex items-center justify-between">
         <a
           href="#top"
-          className="font-display text-lg text-text-primary tracking-tight"
+          aria-label="Kufre Udoh, back to top"
+          className="text-accent"
         >
-          <Wordmark />
+          <LogoMark className="h-7 w-7" />
         </a>
         <ul className="flex items-center gap-6">
           {links.map((link) => (
