@@ -8,16 +8,7 @@ export default function Footer() {
     <footer id="contact" className="section-gap pb-16">
       <div className="container-page">
         <div className="relative overflow-hidden rounded-[var(--radius-lg)] border border-border bg-bg-elevated p-8 md:p-12 flex flex-col items-start gap-6 footer-rings">
-          <div className="flex flex-wrap items-center gap-3">
-            <span className="eyebrow">04 / Contact</span>
-            <span className="inline-flex items-center gap-2 rounded-full border border-border px-3 py-1 font-mono text-xs uppercase tracking-wider text-text-secondary">
-              <span className="relative flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full rounded-full bg-status-wip animate-wip-pulse" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-status-wip" />
-              </span>
-              Open to new opportunities
-            </span>
-          </div>
+          <span className="eyebrow">04 / Contact</span>
 
           <h2 className="text-h2 font-medium">Let&rsquo;s build something calm together.</h2>
           <p className="prose-copy text-text-secondary">
