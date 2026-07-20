@@ -1,31 +1,36 @@
-# 💫 About Me:
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-🚀  Currently working on a targetted savings mobile application
+## Getting Started
 
-👥  Looking forward to collaborating on Native Android applications and/or React Native applications 
+First, run the development server:
 
-💻  Comfortable writing mobile applications with Kotlin and TypeScript 
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-🤝  Looking for assistance/pointers on understanding the React ecosystem 
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-📕  Currently learning state management with Redux Toolkit and Redux Toolkit Query 
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-⚡️  Die hard Naruto fanboy
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## 🌐 Socials:
+## Learn More
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/gentlekboy) [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=Twitter&logoColor=white)](https://twitter.com/gentlekboy)
+To learn more about Next.js, take a look at the following resources:
 
-# 💻 Tech Stack:
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Kotlin](https://img.shields.io/badge/kotlin-%230095D5.svg?style=for-the-badge&logo=kotlin&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![Expo](https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&logo=expo&logoColor=#D04A37) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-# 📊 GitHub Stats:
+## Deploy on Vercel
 
-![img](https://github-readme-stats.vercel.app/api?username=gentlekboy&theme=dark&hide_border=false&include_all_commits=true&count_private=true)
-![img](https://github-readme-streak-stats.herokuapp.com/?user=gentlekboy&theme=dark&hide_border=false)
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=gentlekboy&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
----
-
-[![](https://visitcount.itsvg.in/api?id=gentlekboy&icon=5&color=8)](https://visitcount.itsvg.in)
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
