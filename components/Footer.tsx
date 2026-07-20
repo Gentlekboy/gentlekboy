@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react";
+import { ArrowUp, Mail } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./icons";
 
 export default function Footer() {
@@ -8,7 +8,17 @@ export default function Footer() {
     <footer id="contact" className="section-gap pb-16">
       <div className="container-page">
         <div className="relative overflow-hidden rounded-[var(--radius-lg)] border border-border bg-bg-elevated p-8 md:p-12 flex flex-col items-start gap-6 footer-rings">
-          <span className="eyebrow">04 / Contact</span>
+          <div className="flex flex-wrap items-center gap-3">
+            <span className="eyebrow">04 / Contact</span>
+            <span className="inline-flex items-center gap-2 rounded-full border border-border px-3 py-1 font-mono text-xs uppercase tracking-wider text-text-secondary">
+              <span className="relative flex h-2 w-2">
+                <span className="absolute inline-flex h-full w-full rounded-full bg-status-wip animate-wip-pulse" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-status-wip" />
+              </span>
+              Open to new opportunities
+            </span>
+          </div>
+
           <h2 className="text-h2 font-medium">Let&rsquo;s build something calm together.</h2>
           <p className="prose-copy text-text-secondary">
             Open to interesting problems, thoughtful teams, and the
@@ -48,7 +58,13 @@ export default function Footer() {
 
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-text-muted font-mono">
           <span>© {year} Kufre Udoh</span>
-          <span>Built with Next.js &amp; Tailwind</span>
+          <a
+            href="#top"
+            className="inline-flex items-center gap-1.5 text-text-muted transition-colors duration-[var(--duration-fast)] hover:text-accent"
+          >
+            Back to top
+            <ArrowUp size={14} strokeWidth={1.75} />
+          </a>
         </div>
       </div>
     </footer>
