@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Fraunces, Inter, JetBrains_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -25,7 +26,7 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-const siteUrl = "https://kufre-udoh-portfolio.vercel.app";
+const siteUrl = "https://gentlekboy.vercel.app";
 const oneLiner =
   "Software engineer crafting calm, dependable products, from resilient backends to interfaces that feel effortless.";
 
@@ -57,7 +58,10 @@ export default function RootLayout({
       lang="en"
       className={`${fraunces.variable} ${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-bg">{children}</body>
+      <body className="min-h-full flex flex-col bg-bg">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
