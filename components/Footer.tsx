@@ -8,7 +8,7 @@ export default function Footer() {
     <footer id="contact" className="section-gap pb-16">
       <div className="container-page">
         <div className="relative overflow-hidden rounded-[var(--radius-lg)] border border-border bg-bg-elevated p-8 md:p-12 flex flex-col items-start gap-6 footer-rings">
-          <span className="eyebrow">04 / Contact</span>
+          <span className="eyebrow">05 / Contact</span>
 
           <h2 className="text-h2 font-medium">Let&rsquo;s build something calm together.</h2>
           <p className="prose-copy text-text-secondary">

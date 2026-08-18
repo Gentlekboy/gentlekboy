@@ -21,6 +21,10 @@
 
   /* Color: status */
   --status-wip: #7bc47f;
+  --status-live: #7bc47f;
+  --status-deployment: #e8a144;
+  --status-testing: #5b9bd5;
+  --status-development: #8a8f98;
 
   /* Spacing & layout */
   --container-max: 1080px;
@@ -77,6 +81,10 @@
   --color-accent-border: var(--accent-border);
 
   --color-status-wip: var(--status-wip);
+  --color-status-live: var(--status-live);
+  --color-status-deployment: var(--status-deployment);
+  --color-status-testing: var(--status-testing);
+  --color-status-development: var(--status-development);
 
   --font-display: var(--font-fraunces);
   --font-body: var(--font-inter);
