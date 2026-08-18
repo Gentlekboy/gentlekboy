@@ -1,17 +1,37 @@
+import {
+  Rocket,
+  HeartPulse,
+  Car,
+  PiggyBank,
+  Church,
+  Ghost,
+} from "lucide-react";
 import Reveal from "./Reveal";
 
-const skills = [
+const funFacts = [
   {
-    area: "Frontend",
-    items: ["React Native", "Expo", "Next.js", "TypeScript", "Tailwind CSS"],
+    icon: Rocket,
+    label: "Built a dating app that bans swiping",
   },
   {
-    area: "Backend & Data",
-    items: ["Firebase", "Supabase", "PostgreSQL", "Node.js"],
+    icon: Car,
+    label: "Taught two apps to find each other a ride",
   },
   {
-    area: "Shipping & Tools",
-    items: ["EAS Build", "App Store & Play Store release", "Electron", "Google Maps SDK"],
+    icon: HeartPulse,
+    label: "Made a health tracker gentle enough for a bad day",
+  },
+  {
+    icon: PiggyBank,
+    label: "Rebuilt budgeting around payday, not the calendar",
+  },
+  {
+    icon: Church,
+    label: "Gave a church community a whole tech stack",
+  },
+  {
+    icon: Ghost,
+    label: "Shipped an offline Bible quiz nobody asked for",
   },
 ];
 
@@ -23,60 +43,41 @@ export default function About() {
           <span className="eyebrow">03 / About</span>
         </Reveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
-          <Reveal className="md:col-span-3">
-            <div className="flex flex-col gap-5">
-              <h2 className="text-h2 font-medium">A little about me</h2>
-              <div className="prose-copy flex flex-col gap-4 text-base text-text-secondary">
-                <p>
-                  I&rsquo;m Kufre, a software engineer who builds mobile and
-                  web products end to end. I&rsquo;ve shipped a relationship
-                  app built on explicit commitments instead of swipe
-                  mechanics, a symptom tracker for people living with lupus, a
-                  ride-hailing platform with rider and driver apps, a
-                  kakeibo-inspired budgeting app, and a full platform for a
-                  church community covering its website, staff tooling, and
-                  an offline quiz app.
-                </p>
-                <p>
-                  Some of that is frontend work alongside a designer and a
-                  backend engineer. Some of it is full-stack, solo, using
-                  Firebase or Supabase to move fast without a dedicated
-                  backend team.
-                </p>
-                <p>
-                  Right now I&rsquo;m most interested in products that ask
-                  people to be more intentional, whether that&rsquo;s how
-                  they date, budget, or track their health, and in the
-                  unglamorous work of actually getting an app through App
-                  Store review and into people&rsquo;s hands.
-                </p>
-              </div>
+        <Reveal>
+          <div className="flex flex-col gap-5 max-w-3xl">
+            <h2 className="text-h2 font-medium">
+              I build things, then obsess over the details.
+            </h2>
+            <div className="prose-copy flex flex-col gap-4 text-base text-text-secondary">
+              <p>
+                I build apps that people trust with big things: who they
+                date, where their money goes, and who drives them home. No
+                pressure.
+              </p>
+              <p>
+                Sometimes I build with a designer and a backend engineer.
+                Most times it&rsquo;s just me, doing every job myself. Either
+                way, I like finishing more than starting.
+              </p>
             </div>
-          </Reveal>
+          </div>
+        </Reveal>
 
-          <Reveal delay={0.08} className="md:col-span-2">
-            <div className="flex flex-col gap-6">
-              {skills.map((group) => (
-                <div key={group.area} className="flex flex-col gap-2.5">
-                  <h3 className="font-mono text-xs uppercase tracking-wider text-text-muted">
-                    {group.area}
-                  </h3>
-                  <div className="flex flex-wrap gap-2">
-                    {group.items.map((item) => (
-                      <span
-                        key={item}
-                        className="rounded-[var(--radius-sm)] bg-bg-subtle px-2.5 py-1 text-sm text-text-secondary"
-                      >
-                        {item}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </Reveal>
-        </div>
+        <Reveal delay={0.08}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {funFacts.map(({ icon: Icon, label }) => (
+              <div
+                key={label}
+                className="group flex items-center gap-3 rounded-[var(--radius-md)] border border-border bg-bg-elevated px-4 py-3.5 transition-all duration-[var(--duration-fast)] hover:-translate-y-0.5 hover:[border-color:var(--accent-border)] hover:shadow-[var(--shadow-card-hover)]"
+              >
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-[var(--radius-sm)] bg-accent-subtle text-accent transition-transform duration-[var(--duration-fast)] group-hover:scale-110">
+                  <Icon size={16} strokeWidth={1.75} />
+                </span>
+                <span className="text-sm text-text-secondary">{label}</span>
+              </div>
+            ))}
+          </div>
+        </Reveal>
       </div>
     </section>
   );

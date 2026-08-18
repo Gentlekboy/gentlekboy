@@ -1,4 +1,6 @@
-import { shippedProjects } from "@/content/projects";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import { featuredProjects } from "@/content/projects";
 import ProjectCard from "./ProjectCard";
 import Reveal from "./Reveal";
 
@@ -18,12 +20,22 @@ export default function Projects() {
         </Reveal>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[var(--card-gap)]">
-          {shippedProjects.map((project, i) => (
+          {featuredProjects.map((project, i) => (
             <Reveal key={project.slug} delay={i * 0.08}>
               <ProjectCard project={project} />
             </Reveal>
           ))}
         </div>
+
+        <Reveal>
+          <Link
+            href="/projects"
+            className="inline-flex items-center gap-1.5 self-start text-sm text-text-secondary transition-colors duration-[var(--duration-fast)] hover:text-accent"
+          >
+            View all projects
+            <ArrowRight size={16} strokeWidth={1.75} />
+          </Link>
+        </Reveal>
       </div>
     </section>
   );
