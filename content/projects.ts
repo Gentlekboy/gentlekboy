@@ -155,6 +155,82 @@ export const projects: Project[] = [
     },
   },
   {
+    slug: "vaf-eligibility-calculator",
+    title: "VAF Eligibility Calculator",
+    role: "Frontend Engineer",
+    status: "shipped",
+    badge: "live",
+    platforms: ["web"],
+    blurb:
+      "A multi-step eligibility calculator for Stanbic IBTC's Vehicle Asset Finance (car loan) product: walks customers through personal, employment, vehicle, and financial details, then returns an instant eligibility decision. Built as an Angular SPA embedded in the bank's website.",
+    tags: ["Angular", "TypeScript", "RxJS"],
+    links: {
+      website: "https://mynetworth.stanbicibtcbank.com/vafEligibilityCalculator",
+    },
+  },
+  {
+    slug: "networth-tracker",
+    title: "Net Worth Tracker",
+    role: "Frontend Engineer",
+    status: "shipped",
+    badge: "live",
+    platforms: ["web"],
+    blurb:
+      "A personal finance dashboard for Stanbic IBTC customers: log assets and liabilities and track net worth over time, with downloadable and emailed reports. Built as an Angular SPA and the host site for the VAF Eligibility Calculator.",
+    tags: ["Angular", "TypeScript", "RxJS"],
+    image: "/projects/networth-tracker.jpg",
+    links: {
+      website: "https://mynetworth.stanbicibtcbank.com",
+    },
+  },
+  {
+    slug: "branch-locator",
+    title: "Branch Locator",
+    role: "Frontend Engineer",
+    status: "shipped",
+    badge: "live",
+    platforms: ["mobile"],
+    blurb:
+      "A branch, ATM, agent, and affluent lounge locator for the Stanbic IBTC mobile app: real-time distance and availability status, with quick actions like scheduling a visit or getting directions.",
+    tags: ["React Native", "Google Maps SDK"],
+    image: "/projects/branch-locator.jpg",
+    links: {
+      appStore: "https://apps.apple.com/ng/app/stanbic-ibtc-mobile-3-0/id6477922208",
+      playStore: "https://play.google.com/store/apps/details?id=com.StanbicMobile",
+    },
+  },
+  {
+    slug: "spend-and-save",
+    title: "Spend & Save",
+    role: "Frontend Engineer",
+    status: "shipped",
+    badge: "live",
+    platforms: ["mobile"],
+    blurb:
+      "An automated micro-savings feature for the Stanbic IBTC mobile app: sets aside a percentage of every transaction into a savings balance, with an adjustable rate and full transaction history.",
+    tags: ["React Native"],
+    image: "/projects/spend-and-save.jpg",
+    links: {
+      appStore: "https://apps.apple.com/ng/app/stanbic-ibtc-mobile-3-0/id6477922208",
+      playStore: "https://play.google.com/store/apps/details?id=com.StanbicMobile",
+    },
+  },
+  {
+    slug: "n1-savings-challenge",
+    title: "N1 Savings Challenge",
+    role: "Frontend Engineer",
+    status: "shipped",
+    badge: "live",
+    platforms: ["web"],
+    blurb:
+      "A gamified micro-savings web experience for Stanbic IBTC: starts users at ₦1 a day and scales up, with a plan builder, projected returns, and a dashboard tracking progress toward a savings goal.",
+    tags: ["Angular"],
+    links: {
+      website: "https://mysavingschallenge.stanbicibtcbank.com",
+    },
+    image: "/projects/n1-savings-challenge.jpg",
+  },
+  {
     slug: "coc-odogunyan",
     title: "COC Odogunyan",
     role: "Full-stack (solo)",
