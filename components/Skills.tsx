@@ -1,29 +1,9 @@
-import { Layers, Database, Rocket } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import { skills } from "@/content/skills";
 import Reveal from "./Reveal";
 
-const skills = [
-  {
-    area: "Frontend",
-    icon: Layers,
-    items: ["React Native", "Expo", "Next.js", "TypeScript", "Tailwind CSS"],
-  },
-  {
-    area: "Backend & Data",
-    icon: Database,
-    items: ["Firebase", "Supabase", "PostgreSQL", "Node.js"],
-  },
-  {
-    area: "Shipping & Tools",
-    icon: Rocket,
-    items: [
-      "EAS Build",
-      "App Store release",
-      "Play Store release",
-      "Electron",
-      "Google Maps SDK",
-    ],
-  },
-];
+const allTools = skills.flatMap((group) => group.items);
 
 export default function Skills() {
   return (
@@ -40,32 +20,28 @@ export default function Skills() {
           </div>
         </Reveal>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 items-start">
-          {skills.map(({ area, icon: Icon, items }, i) => (
-            <Reveal key={area} delay={i * 0.08}>
-              <div className="flex flex-col gap-4 rounded-[var(--radius-md)] border border-border bg-bg-elevated p-5">
-                <div className="flex items-center gap-2.5">
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-[var(--radius-sm)] bg-accent-subtle text-accent">
-                    <Icon size={16} strokeWidth={1.75} />
-                  </span>
-                  <h3 className="text-sm font-medium text-text-primary">
-                    {area}
-                  </h3>
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  {items.map((item) => (
-                    <span
-                      key={item}
-                      className="rounded-[var(--radius-sm)] bg-bg-subtle px-2.5 py-1 text-sm text-text-secondary"
-                    >
-                      {item}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </Reveal>
-          ))}
-        </div>
+        <Reveal delay={0.06}>
+          <div className="flex flex-wrap gap-2">
+            {allTools.map((item) => (
+              <span
+                key={item}
+                className="rounded-[var(--radius-sm)] bg-bg-subtle px-2.5 py-1 text-sm text-text-secondary"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
+        </Reveal>
+
+        <Reveal>
+          <Link
+            href="/skills"
+            className="inline-flex items-center gap-1.5 self-start text-sm text-text-secondary transition-colors duration-[var(--duration-fast)] hover:text-accent"
+          >
+            View more of the tools I use
+            <ArrowRight size={16} strokeWidth={1.75} />
+          </Link>
+        </Reveal>
       </div>
     </section>
   );

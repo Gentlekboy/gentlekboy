@@ -2,15 +2,15 @@ import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
-import ShippedExplorer from "@/components/ShippedExplorer";
-import { shippedProjects } from "@/content/projects";
+import BuildingExplorer from "@/components/BuildingExplorer";
+import { ongoingProjects } from "@/content/projects";
 
 export const metadata: Metadata = {
-  title: "Projects, Kufre Udoh",
-  description: "Everything I've shipped, solo builds and team contributions.",
+  title: "Now, Kufre Udoh",
+  description: "Everything I'm currently building.",
 };
 
-export default function ProjectsPage() {
+export default function NowPage() {
   return (
     <>
       <Nav />
@@ -19,16 +19,16 @@ export default function ProjectsPage() {
           <div className="container-page flex flex-col gap-10">
             <Reveal>
               <div className="flex flex-col gap-3">
-                <span className="eyebrow">Projects</span>
-                <h1 className="text-h2 font-medium">Things I&rsquo;ve shipped</h1>
+                <span className="eyebrow">Now</span>
+                <h1 className="text-h2 font-medium">What I&rsquo;m building</h1>
                 <p className="prose-copy text-lead text-text-secondary">
-                  A selection of past work: solo builds and team
-                  contributions that made it to real users.
+                  A sneak peek into ongoing work: early, unpolished, and
+                  genuinely in progress.
                 </p>
               </div>
             </Reveal>
 
-            <ShippedExplorer projects={shippedProjects} />
+            <BuildingExplorer projects={ongoingProjects} />
           </div>
         </section>
       </main>

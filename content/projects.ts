@@ -14,6 +14,7 @@ export interface Project {
   blurb: string;
   tags: string[];
   image?: string;
+  images?: string[];
   links?: {
     website?: string;
     appStore?: string;
@@ -56,6 +57,11 @@ export const projects: Project[] = [
       "An African & Caribbean grocery and restaurant delivery platform: customer and merchant mobile apps for browsing, ordering, and fulfilling orders on the go. I fixed bugs and built order placement and refund features across the stack.",
     tags: ["React Native"],
     image: "/projects/etnowe.jpg",
+    images: [
+      "/projects/etnowe-1.jpg",
+      "/projects/etnowe-2.jpg",
+      "/projects/etnowe-3.jpg",
+    ],
     links: {
       appStore: "https://apps.apple.com/us/app/etnowe-grocery-delivery/id1531814543",
       playStore:
@@ -118,6 +124,11 @@ export const projects: Project[] = [
       "A ride-hailing app for riders: book trips, track drivers live, pay in-app, and share trip status with trusted contacts. Live on the App Store.",
     tags: ["Expo", "Firebase", "Google Maps"],
     image: "/projects/buxe.jpg",
+    images: [
+      "/projects/buxe-1.jpg",
+      "/projects/buxe-2.jpg",
+      "/projects/buxe-3.jpg",
+    ],
     links: {
       appStore: "https://apps.apple.com/ng/app/buxe/id6749169171",
     },
@@ -133,6 +144,11 @@ export const projects: Project[] = [
       "The driver-side app for Buxe: accepting trips, live navigation, and earnings tracking. Live on the App Store.",
     tags: ["Expo", "Firebase", "Google Maps"],
     image: "/projects/buxe-driver.jpg",
+    images: [
+      "/projects/buxe-driver-1.jpg",
+      "/projects/buxe-driver-2.jpg",
+      "/projects/buxe-driver-3.jpg",
+    ],
     links: {
       appStore: "https://apps.apple.com/ng/app/buxe-driver/id6753883343",
     },
@@ -148,11 +164,102 @@ export const projects: Project[] = [
       "A blockchain-based money transfer app: converts currency to USDC for near-instant, low-fee wallet-to-wallet transfers, with facial recognition and two-factor security. Live on iOS and Android.",
     tags: ["React Native", "Expo", "Firebase"],
     image: "/projects/sedl.jpg",
+    images: [
+      "/projects/sedl-1.jpg",
+      "/projects/sedl-2.jpg",
+      "/projects/sedl-3.jpg",
+    ],
     links: {
       website: "https://sedlapp.com/",
       appStore: "https://apps.apple.com/ng/app/sedl-app/id6744427872",
       playStore: "https://play.google.com/store/apps/details?id=com.sedlapp.sedlapp",
     },
+  },
+  {
+    slug: "vaf-eligibility-calculator",
+    title: "VAF Eligibility Calculator",
+    role: "Frontend Engineer",
+    status: "shipped",
+    badge: "live",
+    platforms: ["web"],
+    blurb:
+      "A multi-step eligibility calculator for Stanbic IBTC's Vehicle Asset Finance (car loan) product: walks customers through personal, employment, vehicle, and financial details, then returns an instant eligibility decision. Built as an Angular SPA embedded in the bank's website.",
+    tags: ["Angular", "TypeScript", "RxJS"],
+    links: {
+      website: "https://mynetworth.stanbicibtcbank.com/vafEligibilityCalculator",
+    },
+  },
+  {
+    slug: "networth-tracker",
+    title: "Net Worth Tracker",
+    role: "Frontend Engineer",
+    status: "shipped",
+    badge: "live",
+    platforms: ["web"],
+    blurb:
+      "A personal finance dashboard for Stanbic IBTC customers: log assets and liabilities and track net worth over time, with downloadable and emailed reports. Built as an Angular SPA and the host site for the VAF Eligibility Calculator.",
+    tags: ["Angular", "TypeScript", "RxJS"],
+    image: "/projects/networth-tracker.jpg",
+    links: {
+      website: "https://mynetworth.stanbicibtcbank.com",
+    },
+  },
+  {
+    slug: "branch-locator",
+    title: "Branch Locator",
+    role: "Frontend Engineer",
+    status: "shipped",
+    badge: "live",
+    platforms: ["mobile"],
+    blurb:
+      "A branch, ATM, agent, and affluent lounge locator for the Stanbic IBTC mobile app: real-time distance and availability status, with quick actions like scheduling a visit or getting directions.",
+    tags: ["React Native", "Google Maps SDK"],
+    image: "/projects/branch-locator.jpg",
+    images: [
+      "/projects/branch-locator-1.jpg",
+      "/projects/branch-locator-2.jpg",
+      "/projects/branch-locator-3.jpg",
+    ],
+    links: {
+      appStore: "https://apps.apple.com/ng/app/stanbic-ibtc-mobile-3-0/id6477922208",
+      playStore: "https://play.google.com/store/apps/details?id=com.StanbicMobile",
+    },
+  },
+  {
+    slug: "spend-and-save",
+    title: "Spend & Save",
+    role: "Frontend Engineer",
+    status: "shipped",
+    badge: "live",
+    platforms: ["mobile"],
+    blurb:
+      "An automated micro-savings feature for the Stanbic IBTC mobile app: sets aside a percentage of every transaction into a savings balance, with an adjustable rate and full transaction history.",
+    tags: ["React Native"],
+    image: "/projects/spend-and-save.jpg",
+    images: [
+      "/projects/spend-and-save-1.jpg",
+      "/projects/spend-and-save-2.jpg",
+      "/projects/spend-and-save-3.jpg",
+    ],
+    links: {
+      appStore: "https://apps.apple.com/ng/app/stanbic-ibtc-mobile-3-0/id6477922208",
+      playStore: "https://play.google.com/store/apps/details?id=com.StanbicMobile",
+    },
+  },
+  {
+    slug: "n1-savings-challenge",
+    title: "N1 Savings Challenge",
+    role: "Frontend Engineer",
+    status: "shipped",
+    badge: "live",
+    platforms: ["web"],
+    blurb:
+      "A gamified micro-savings web experience for Stanbic IBTC: starts users at ₦1 a day and scales up, with a plan builder, projected returns, and a dashboard tracking progress toward a savings goal.",
+    tags: ["Angular"],
+    links: {
+      website: "https://mysavingschallenge.stanbicibtcbank.com",
+    },
+    image: "/projects/n1-savings-challenge.jpg",
   },
   {
     slug: "coc-odogunyan",

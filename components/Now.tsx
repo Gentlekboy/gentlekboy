@@ -31,7 +31,7 @@ export default function Now() {
 
         <Reveal>
           <Link
-            href="/projects"
+            href="/now"
             className="inline-flex items-center gap-1.5 self-start text-sm text-text-secondary transition-colors duration-[var(--duration-fast)] hover:text-accent"
           >
             View everything I&rsquo;m building
