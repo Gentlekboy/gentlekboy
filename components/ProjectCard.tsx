@@ -1,5 +1,6 @@
 import { Globe, Smartphone, LayoutDashboard, Store, GitFork, FolderGit2 } from "lucide-react";
 import type { Project, ProjectBadge } from "@/content/projects";
+import ProjectImage from "./ProjectImage";
 
 const badgeCopy: Record<ProjectBadge, string> = {
   development: "In development",
@@ -20,13 +21,12 @@ export default function ProjectCard({ project }: { project: Project }) {
 
   return (
     <div className="group h-full overflow-hidden rounded-[var(--radius-lg)] border border-border bg-bg-elevated shadow-[var(--shadow-card)] transition-all duration-[var(--duration-base)] hover:-translate-y-1 hover:[border-color:var(--accent-border)] hover:shadow-[var(--shadow-card-hover)]">
-      <div className="relative aspect-video w-full bg-bg-subtle">
-        {project.image ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            src={project.image}
+      <div className="relative aspect-video w-full overflow-hidden bg-bg-subtle">
+        {project.image || (project.images && project.images.length > 0) ? (
+          <ProjectImage
+            image={project.image}
+            images={project.images}
             alt={project.title}
-            className="h-full w-full object-cover"
           />
         ) : (
           <div className="flex h-full w-full items-center justify-center">
