@@ -186,7 +186,8 @@ export const projects: Project[] = [
       "A multi-step eligibility calculator for Stanbic IBTC's Vehicle Asset Finance (car loan) product: walks customers through personal, employment, vehicle, and financial details, then returns an instant eligibility decision. Built as an Angular SPA embedded in the bank's website.",
     tags: ["Angular", "TypeScript", "RxJS"],
     links: {
-      website: "https://mynetworth.stanbicibtcbank.com/vafEligibilityCalculator",
+      website:
+        "https://www.stanbicibtcbank.com/nigeriabank/personal/products-and-services/all-loans/vehicle-and-asset-finance",
     },
   },
   {
